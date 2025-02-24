@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+  
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+body {
+  font-family: "poppins" sans-serif ;
+  background-color: rgba(8, 77, 14, 0.98);
+
+}
+
+
+img{
+  max-width: 100%;
+  
+  
+  
+}
+ 
+.container{
+  max-width: 1200px;
+  margin: 0 auto ;
+}
+
+.header{
+  background-image: url(imagenes/fondo.jpg);
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 80px 0 ;
+}
+
+
+.nav{
+  position: absolute;
+  top: 0px;
+  right: 0;
+display: flex;
+align-items: center; 
+justify-content: space-between;
+}
+
+
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(255, 0, 0);
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+ .nav ul li {
+  position: relative;
+  float: left;
+
+}
+
+ .nav ul li a  {
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(253, 255, 255);
+  font-weight: 600;
+  display: block;
+}
+
+ .nav ul li a:hover{
+  color: rgb(43, 180, 15);
+}
+
+#menu{
+  display: none;
+}
+
+.menu-icono{
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 25px;
+}
+
+.menu label{
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.btn-2{
+  background-color: rgb(77, 10, 90);
+  color: rgb(161, 39, 17);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 2px;
+  margin-top: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.header-content{
+  display: flex;
+}
+.header-txt h1 {
+ font-size: 60px;
+ color: rgba(21, 245, 77, 0.856);
+ line-height: 1.3;
+ margin-bottom: 25px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header-txt p{
+font-size: 20px;
+  font-family:cursive ;
+  color: rgb(132, 255, 116);
+}
+
+ p {
+  font-size: 16px;
+  color: rgb(31, 185, 193);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS: sans-serif';
+}
+.popular{
+  padding:  100px 0;
+ text-align: center;
+}
+
+h2{
+  color: aliceblue;
+  font-size: 35px;
+  margin-bottom: 45px;
+
+}
+
+
+.popular-content{
+  display: flex;
+ justify-content: space-between;
+
+}
+
+
+.popular-content img{
+  width: 150px;
+}
+.btn-1, .btn-2, .btn-3{
+  display: inline-block;
+  padding: 11px 35px;
+  border: 2px solid rgb(66, 255, 8);
+  border-radius: 25px;
+  margin-right: 25px;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+}
+.btn-1:hover{
+  background-color: rgb(214, 20, 20);
+}
+
+.product-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  
+}
+
+.product-1{
+  background-color: rgba(7, 60, 42, 0.843);
+}
+
+  .product-txt{
+    padding: 50px 30px;
+  }
+h3{
+  font-size: 20px;
+  color: rgb(14, 231, 255);
+  margin-bottom: 15px;
+  font-family:sans-serif;
+}
+
+.contact-content{
+  background-color: rgba(255, 255, 255, 0.612);
+}
+ h2{
+justify-content: center;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.737);
+  font-size: 35px;
+  margin-bottom: 45px;
+  font-family: cursive;
+}
+ 
+@media(max-width:991px) {
+  .menu{
+  padding: 20px;
+  }
+  .menu label{
+    display: initial;
+  }
+  .menu .nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color:rgb(255, 0, 0) ;
+    display: none;
+
+  }
+  .meu , .nav ul li a:hover{
+    color: rgba(10, 4, 53, 0.884);
+  }
+  .menu .nav ul li{
+   width: 100%;
+  }
+  .menu.checked ~ .nav{
+     display: initial;                     
+  } 
+
+  .header{
+    min-height: 0vh;
+    padding: 80px 30px 50px 30px;
+
+  }
+
+  .header-txt h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .button{
+    justify-content: center;
+  }
+
+  .btn-1:last-of-type{
+    margin-right: 0;
+  }
+  .popular{
+    display: none;
+  }
+  .product{
+    padding: 30px 0;
+  
+  }
+  
+  .product-content{
+    grid-template-columns: repeat(1, 1fr);
+    gap:30px;
+  }
+}
+
